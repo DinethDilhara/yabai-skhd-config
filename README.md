@@ -47,4 +47,7 @@ edit with any editor you prefer and add config file [Yabairc](https://github.com
 ```
 edit with any editor you prefer and add config file [skhdrc](https://github.com/DinethDilhara/yabai-skhd-config/blob/main/skhd/.config/skhdrc)
 
-###
+### SRC
+
+- yabai - > [Yabai-Repo](https://github.com/koekeishiya/yabai)
+- skhd  - > [Skhd-Repo](https://github.com/koekeishiya/skhd)
