@@ -34,7 +34,7 @@ brew install koekeishiya/formulae/skhd
 04. touch yabairc
 05. open yabairc / nano yabairc / vim yabairc
 ```
-edit with any editor you prefer and add config file [Yabairc](https://github.com/DinethDilhara/yabai-shd-config/blob/main/yabai/.config/yabairc])
+edit with any editor you prefer and add config file [Yabairc](https://github.com/DinethDilhara/yabai-skhd-config/blob/main/yabai/.config/yabairc)
 
 ### Skhd
 
