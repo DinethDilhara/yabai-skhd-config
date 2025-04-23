@@ -1,10 +1,48 @@
+
+---
+
+![alt text](config.png)
+
 # yabai-skhd-config
- Tiling window manager and hotkey daemon setup for macOS
- 
 
-# Setup Guide for Yabai and Skhd
+Tiling window manager and hotkey daemon setup for macOS
 
-This guide will walk you through the process of downloading, installing, and configuring `yabai` and `skhd` on macOS using terminal commands.
+## Setup Guide for Yabai and Skhd
+
+This guide will walk you through the process of downloading, installing, and configuring `yabai` and `skhd` on macOS using two different methods.
+
+---
+
+## 🛠️ Option 01: One-Click Setup via Nix
+
+This method uses [Nix](https://nixos.org) and the included `flake.nix` to automate the installation and configuration of `yabai` and `skhd`.
+
+### Requirements
+
+- [Nix Package Manager](https://nixos.org/download.html)
+- Flakes enabled (add `experimental-features = nix-command flakes` to `~/.config/nix/nix.conf`)
+
+### Steps
+
+```sh
+# Clone the repo
+git clone https://github.com/DinethDilhara/yabai-skhd-config.git
+cd yabai-skhd-config
+
+# Run the setup script
+nix run
+```
+
+### What this does
+
+- Installs `yabai` and `skhd` using Homebrew (if not already installed)
+- Copies your `skhdrc` and `yabairc` config files into `~/.config/`
+- Restarts both services using `brew services`
+-  You're good to go!
+
+---
+
+## 🔧 Option 02: Manual Installation
 
 ## Prerequisites
 
@@ -32,7 +70,7 @@ brew install koekeishiya/formulae/skhd
 02. mkdir .config/yabai
 03. cd .config/yabai
 04. touch yabairc
-05. open yabairc / nano yabairc / vim yabairc
+05. open yabairc 
 ```
 edit with any editor you prefer and add config file [Yabairc](https://github.com/DinethDilhara/yabai-skhd-config/blob/main/yabai/.config/yabairc)
 
@@ -43,11 +81,15 @@ edit with any editor you prefer and add config file [Yabairc](https://github.com
 02. mkdir .config/skhd
 03. cd .config/skhd
 04. touch skhdrc
-05. open skhdrc / nano skhdrc / vim skhdrc
+05. open skhdrc 
 ```
 edit with any editor you prefer and add config file [skhdrc](https://github.com/DinethDilhara/yabai-skhd-config/blob/main/skhd/.config/skhdrc)
 
-### SRC
+---
 
-- yabai - > [Yabai-Repo](https://github.com/koekeishiya/yabai)
-- skhd  - > [Skhd-Repo](https://github.com/koekeishiya/skhd)
+## 🔗 Resources
+
+- [yabai repository](https://github.com/koekeishiya/yabai)
+- [skhd repository](https://github.com/koekeishiya/skhd)
+
+---
