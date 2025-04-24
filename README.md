@@ -1,7 +1,6 @@
 
 ---
-
-![alt text](config.png)
+<img width="748" alt="config" src="https://github.com/user-attachments/assets/5ec5c4bd-e743-4715-a15c-7107a7db2323" />
 
 # yabai-skhd-config
 
